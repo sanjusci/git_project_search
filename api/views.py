@@ -159,5 +159,6 @@ class External:
 def index(request):
     return render(request, 'api/index.html')
 
-def index2(request):
-    return render(request, 'api/a.html')
+
+# def index2(request):
+#     return render(request, 'api/a.html')

@@ -21,6 +21,6 @@ import api.views
 urlpatterns = [
     # url(r'^admin/', admin.site.urls),
     url(r'^index/$', api.views.index, name='index'),
-    url(r'^a/$', api.views.index2, name='index2'),
+    # url(r'^a/$', api.views.index2, name='index2'),
     url(r'^navigator/$', csrf_exempt(api.views.Navigator.as_view())),
 ]
