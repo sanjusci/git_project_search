@@ -122,6 +122,7 @@ class External:
             print(resp)
             return resp
         except (ValueError, KeyError, TypeError):
+            print(ValueError, KeyError, TypeError)
             print('Github api response error from get_repositories function!!')
             return []
 
@@ -152,6 +153,7 @@ class External:
             resp = json.loads(response.text)
             return resp
         except (ValueError, KeyError, TypeError):
+            print(ValueError, KeyError, TypeError)
             print('Github api response error from get_commits function!!')
             return []
 
